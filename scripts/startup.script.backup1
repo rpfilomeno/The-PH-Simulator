@@ -1,0 +1,1 @@
+load_map("overworld", coord[2, 0, 0], SOUTH);

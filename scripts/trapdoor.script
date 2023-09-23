@@ -1,0 +1,11 @@
+if self.frame == 1 then
+  play_animation(self, "open");
+  modify_navigation(tile[2, -1, -1], tile[2, -2, 0], INTERACT_ONLY);
+  modify_navigation(tile[2, -1, -1], tile[1, -1, 0], INTERACT_ONLY);
+  modify_navigation(tile[2, -1, -1], tile[3, -1, 0], INTERACT_ONLY);
+elseif self.frame == 6 then
+  play_animation(self, "close");
+  modify_navigation(tile[2, -1, -1], tile[2, -2, 0], WALK_AND_INTERACT);
+  modify_navigation(tile[2, -1, -1], tile[1, -1, 0], WALK_AND_INTERACT);
+  modify_navigation(tile[2, -1, -1], tile[3, -1, 0], WALK_AND_INTERACT);
+end;
